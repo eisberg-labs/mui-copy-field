@@ -4,6 +4,7 @@
 > Material UI TextField with copy to clipboard functionality.
 
 ![Example](./docs/demo.gif)
+
 If you 👍 or use this project, consider giving it a ★, thanks! 🙌
 
 ## Installation
