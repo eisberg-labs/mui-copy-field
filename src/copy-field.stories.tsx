@@ -13,4 +13,15 @@ export const Basic = () => {
   );
 }
 
+export const Readonly = () => {
+  const [out, setOut] = React.useState('');
+  return (
+    <>
+      <CopyField disabled={true} label="Click on copy Button" value={"Read only val"} onCopySuccess={setOut}/>
+      <p>{out}</p>
+    </>
+  );
+}
+
+
 export const Default = () => <DefaultCopyField label="Click on copy Button" value={"Enter text"} />;
