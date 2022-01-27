@@ -1,6 +1,6 @@
 {
   "name": "@eisberg-labs/mui-copy-field",
-  "version": "1.0.0-beta-5",
+  "version": "1.0.0",
   "author": "Eisberg Labs <ana@eisberg-labs.com> (https://www.eisberg-labs.com)",
   "description": "Material-UI text field with copy to clipboard.",
   "private": false,
