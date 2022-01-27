@@ -1,11 +1,8 @@
 {
   "name": "@eisberg-labs/mui-copy-field",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-beta-5",
   "author": "Eisberg Labs <ana@eisberg-labs.com> (https://www.eisberg-labs.com)",
   "description": "Material-UI text field with copy to clipboard.",
-  "main": "lib/cjs/index.js",
-  "module": "lib/esm/index.js",
-  "types": "lib/types/index.d.ts",
   "private": false,
   "repository": {
     "type": "git",
@@ -16,6 +13,9 @@
   "bugs": {
     "url": "https://github.com/eisberg-labs/mui-copy-field/issues"
   },
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest",
     "test:cover": "jest --coverage",
@@ -24,11 +24,9 @@
     "storybook": "start-storybook -p 6006",
     "clean": "rimraf lib",
     "declarations": "tsc -p tsconfig.prod.json",
-    "build:esm": "cross-env BABEL_ENV=esmUnbundled babel src --extensions '.ts' --out-dir 'lib/esm' --source-maps",
-    "build:cjs": "cross-env BABEL_ENV=cjs babel src --extensions '.ts' --out-dir 'lib/cjs' --source-maps",
-    "build:bundles": "cross-env BABEL_ENV=esmBundled rollup -c",
+    "build-rollup": "rollup -c",
     "prebuild": "npm run test && npm run lint",
-    "build": "npm-run-all -l clean -p build:esm build:cjs build:bundles declarations"
+    "build": "npm-run-all -l clean -p build-rollup declarations"
   },
   "keywords": [
     "react",
@@ -96,5 +94,12 @@
     "@mui/material": "^5.0.0",
     "@emotion/react": "^11.0.0"
   },
-  "dependencies": {}
+  "files": [
+    "README.md",
+    "lib"
+  ],
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
 }

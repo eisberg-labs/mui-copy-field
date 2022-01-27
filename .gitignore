@@ -16,5 +16,4 @@ coverage
 node_modules/
 .idea/
 lib/
-
 *.tgz

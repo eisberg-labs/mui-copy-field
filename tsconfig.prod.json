@@ -4,13 +4,14 @@
     "emitDeclarationOnly": true,
     "declarationMap": true,
     "jsx": "react",
-    "outDir": "lib/types",
+    "declarationDir": "lib",
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true
   },
   "include": [
     "./src/index.ts",
     "./src/**/*.tsx"
-  ]
+  ],
+  "exclude": ["./src/**/*.spec.tsx", "./src/**/*.stories.tsx"]
 }
 
