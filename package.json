@@ -14,7 +14,7 @@
   "homepage": "https://github.com/eisberg-labs/mui-copy-field",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TeamWertarbyte/mui-copy-field/issues"
+    "url": "https://github.com/eisberg-labs/mui-copy-field/issues"
   },
   "scripts": {
     "test": "jest",
