@@ -16,5 +16,9 @@ node_modules/
 .idea/
 .storybook/
 
+.rollup.cache
+
 *.spec.tsx
 *.stories.tsx
+
+*.tgz
