@@ -1,3 +1,4 @@
+# ⚠ Project is moved to [React Components](https://github.com/eisberg-labs/react-components).
 [![Downloads](http://img.shields.io/npm/dm/@eisberg-labs/mui-copy-field.svg)](https://npmjs.org/package/@eisberg-labs/mui-copy-field)
 ![Build status](https://github.com/eisberg-labs/mui-copy-field/actions/workflows/ci.yml/badge.svg)
 ## [mui-copy-field](https://github.com/eisberg-labs/mui-copy-field)
